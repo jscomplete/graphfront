@@ -1,0 +1,31 @@
+{
+  "name": "graphfront",
+  "version": "0.1.1",
+  "description": "Generate a GraphQL schema for any database using the database schema information",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jscomplete/graphfront.git"
+  },
+  "keywords": [
+    "GraphQL",
+    "PostgreSQL",
+    "Database",
+    "API"
+  ],
+  "author": "Samer Buna",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/jscomplete/graphfront/issues"
+  },
+  "homepage": "https://github.com/jscomplete/graphfront#readme",
+  "dependencies": {
+    "express-graphql": "^0.6.1",
+    "graphql": "^0.8.2",
+    "humps": "^2.0.0",
+    "pluralize": "^3.1.0"
+  },
+  "devDependencies": {
+    "jest": "^18.1.0"
+  }
+}
