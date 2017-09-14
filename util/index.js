@@ -1,3 +1,5 @@
+'use strict';
+
 const humps = require('humps');
 const pluralize = require('pluralize');
 
@@ -10,7 +12,9 @@ const util = {
     if (Array.isArray(stringOrArray)) {
       return stringOrArray.map(humps.decamelize);
     }
-    return humps.decamelize(util.replaceSpaces(stringOrArray)).replace(/_+/g, '_');
+    return humps
+      .decamelize(util.replaceSpaces(stringOrArray))
+      .replace(/_+/g, '_');
   },
 
   toCamelCase(string) {

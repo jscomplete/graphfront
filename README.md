@@ -1,11 +1,12 @@
 # Graphfront
 
-Use a database schema information to generate a GraphQL schema.
+Use a PostgreSQL database schema information to generate a GraphQL schema.
 
 This is a work-in-progress project.
 It requires a super recent version of Node.js and using it in production is not recommended.
 
 
+[![Build Status](https://travis-ci.org/jscomplete/graphfront.svg?branch=master)](https://travis-ci.org/jscomplete/graphfront)
 [![npm version](https://badge.fury.io/js/graphfront.svg)](https://badge.fury.io/js/graphfront)
 
 ## Getting Started
@@ -33,7 +34,7 @@ import { generator } from 'graphfront';
 const { getSchema } = generator(dbPool, apiKeyValidator);
 ```
 
-This defines a a function that can be invoked to generate a schema.
+This defines a function that can be invoked to generate a schema.
 
 Or you can use request handler that automatically generates the schema
 
@@ -59,4 +60,4 @@ Changes are tracked as [Github releases](https://github.com/jscomplete/graphfron
 
 ### License
 
-Graphfront is [BSD-licensed](https://github.com/jscomplete/graphfront/blob/master/LICENSE).
+Graphfront is released under the [MIT license](https://github.com/jscomplete/graphfront/blob/master/LICENSE).
