@@ -1,9 +1,23 @@
 'use strict';
 
+const crypto = require('crypto');
 const humps = require('humps');
 const pluralize = require('pluralize');
 
 const util = {
+  hashWith(stringToHash, algorithm, { asIs = false } = {}) {
+    if (!algorithm) {
+      return stringToHash;
+    }
+    if (!asIs) {
+      stringToHash = stringToHash.trim().toLowerCase();
+    }
+    return crypto
+      .createHash(algorithm)
+      .update(stringToHash)
+      .digest('hex');
+  },
+
   replaceSpaces(string, sep = '_') {
     return string.replace(/\s+/g, sep);
   },
