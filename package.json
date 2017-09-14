@@ -1,6 +1,6 @@
 {
   "name": "graphfront",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Generate a GraphQL schema for any PostgreSQL database using the database schema information",
   "main": "lib/index.js",
   "scripts": {
